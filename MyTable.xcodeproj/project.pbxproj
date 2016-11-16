@@ -12,6 +12,11 @@
 		86C046C81DDBFE96003903B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C046C61DDBFE96003903B3 /* Main.storyboard */; };
 		86C046CA1DDBFE96003903B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C046C91DDBFE96003903B3 /* Assets.xcassets */; };
 		86C046CD1DDBFE96003903B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C046CB1DDBFE96003903B3 /* LaunchScreen.storyboard */; };
+		86C046D51DDC038F003903B3 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046D41DDC038F003903B3 /* StaticTableViewController.swift */; };
+		86C046D71DDC0911003903B3 /* DynaTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C046D61DDC0911003903B3 /* DynaTab.storyboard */; };
+		86C046D91DDC0A94003903B3 /* DynaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */; };
+		86C046DB1DDC14E3003903B3 /* 025.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C046DA1DDC14E3003903B3 /* 025.png */; };
+		86C046DE1DDC1590003903B3 /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C046DD1DDC1590003903B3 /* 001.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		86C046C91DDBFE96003903B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C046CC1DDBFE96003903B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C046CE1DDBFE96003903B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C046D41DDC038F003903B3 /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		86C046D61DDC0911003903B3 /* DynaTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynaTab.storyboard; sourceTree = "<group>"; };
+		86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynaTableViewController.swift; sourceTree = "<group>"; };
+		86C046DA1DDC14E3003903B3 /* 025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 025.png; path = ../../../Downloads/025.png; sourceTree = "<group>"; };
+		86C046DD1DDC1590003903B3 /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		86C046C11DDBFE96003903B3 /* MyTable */ = {
 			isa = PBXGroup;
 			children = (
+				86C046DC1DDC14EC003903B3 /* resources */,
 				86C046C21DDBFE96003903B3 /* AppDelegate.swift */,
 				86C046C41DDBFE96003903B3 /* ViewController.swift */,
 				86C046C61DDBFE96003903B3 /* Main.storyboard */,
 				86C046C91DDBFE96003903B3 /* Assets.xcassets */,
 				86C046CB1DDBFE96003903B3 /* LaunchScreen.storyboard */,
 				86C046CE1DDBFE96003903B3 /* Info.plist */,
+				86C046D41DDC038F003903B3 /* StaticTableViewController.swift */,
+				86C046D61DDC0911003903B3 /* DynaTab.storyboard */,
+				86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */,
 			);
 			path = MyTable;
+			sourceTree = "<group>";
+		};
+		86C046DC1DDC14EC003903B3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				86C046DD1DDC1590003903B3 /* 001.png */,
+				86C046DA1DDC14E3003903B3 /* 025.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C046D71DDC0911003903B3 /* DynaTab.storyboard in Resources */,
+				86C046DB1DDC14E3003903B3 /* 025.png in Resources */,
 				86C046CD1DDBFE96003903B3 /* LaunchScreen.storyboard in Resources */,
+				86C046DE1DDC1590003903B3 /* 001.png in Resources */,
 				86C046CA1DDBFE96003903B3 /* Assets.xcassets in Resources */,
 				86C046C81DDBFE96003903B3 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C046C51DDBFE96003903B3 /* ViewController.swift in Sources */,
+				86C046D51DDC038F003903B3 /* StaticTableViewController.swift in Sources */,
 				86C046C31DDBFE96003903B3 /* AppDelegate.swift in Sources */,
+				86C046D91DDC0A94003903B3 /* DynaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +327,7 @@
 				86C046D31DDBFE96003903B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
