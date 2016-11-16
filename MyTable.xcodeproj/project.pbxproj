@@ -17,6 +17,11 @@
 		86C046D91DDC0A94003903B3 /* DynaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */; };
 		86C046DB1DDC14E3003903B3 /* 025.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C046DA1DDC14E3003903B3 /* 025.png */; };
 		86C046DE1DDC1590003903B3 /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C046DD1DDC1590003903B3 /* 001.png */; };
+		86C046E01DDC2965003903B3 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C046DF1DDC2965003903B3 /* pokedex.json */; };
+		86C046E21DDC2AA3003903B3 /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046E11DDC2AA3003903B3 /* JSONUtil.swift */; };
+		86C046E41DDC38D2003903B3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C046E31DDC38D2003903B3 /* TabBar.storyboard */; };
+		86C046E61DDC4FCF003903B3 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046E51DDC4FCF003903B3 /* MyTableViewCell.swift */; };
+		86C046E81DDC5640003903B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C046E71DDC5640003903B3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynaTableViewController.swift; sourceTree = "<group>"; };
 		86C046DA1DDC14E3003903B3 /* 025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 025.png; path = ../../../Downloads/025.png; sourceTree = "<group>"; };
 		86C046DD1DDC1590003903B3 /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
+		86C046DF1DDC2965003903B3 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
+		86C046E11DDC2AA3003903B3 /* JSONUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
+		86C046E31DDC38D2003903B3 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		86C046E51DDC4FCF003903B3 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		86C046E71DDC5640003903B3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,11 @@
 				86C046D41DDC038F003903B3 /* StaticTableViewController.swift */,
 				86C046D61DDC0911003903B3 /* DynaTab.storyboard */,
 				86C046D81DDC0A94003903B3 /* DynaTableViewController.swift */,
+				86C046DF1DDC2965003903B3 /* pokedex.json */,
+				86C046E11DDC2AA3003903B3 /* JSONUtil.swift */,
+				86C046E31DDC38D2003903B3 /* TabBar.storyboard */,
+				86C046E51DDC4FCF003903B3 /* MyTableViewCell.swift */,
+				86C046E71DDC5640003903B3 /* DetailViewController.swift */,
 			);
 			path = MyTable;
 			sourceTree = "<group>";
@@ -147,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C046D71DDC0911003903B3 /* DynaTab.storyboard in Resources */,
+				86C046E01DDC2965003903B3 /* pokedex.json in Resources */,
 				86C046DB1DDC14E3003903B3 /* 025.png in Resources */,
 				86C046CD1DDBFE96003903B3 /* LaunchScreen.storyboard in Resources */,
+				86C046E41DDC38D2003903B3 /* TabBar.storyboard in Resources */,
 				86C046DE1DDC1590003903B3 /* 001.png in Resources */,
 				86C046CA1DDBFE96003903B3 /* Assets.xcassets in Resources */,
 				86C046C81DDBFE96003903B3 /* Main.storyboard in Resources */,
@@ -164,8 +181,11 @@
 			files = (
 				86C046C51DDBFE96003903B3 /* ViewController.swift in Sources */,
 				86C046D51DDC038F003903B3 /* StaticTableViewController.swift in Sources */,
+				86C046E21DDC2AA3003903B3 /* JSONUtil.swift in Sources */,
 				86C046C31DDBFE96003903B3 /* AppDelegate.swift in Sources */,
 				86C046D91DDC0A94003903B3 /* DynaTableViewController.swift in Sources */,
+				86C046E61DDC4FCF003903B3 /* MyTableViewCell.swift in Sources */,
+				86C046E81DDC5640003903B3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
