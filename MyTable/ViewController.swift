@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let myurl = "https://pokedex-67742.firebaseio.com/pokedex.json"
+        JSONUtil.getDataFromURL(urlStr: myurl)
     }
 
     override func didReceiveMemoryWarning() {

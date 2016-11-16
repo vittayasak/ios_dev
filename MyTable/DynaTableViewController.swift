@@ -29,7 +29,11 @@ class DynaTableViewController: UITableViewController ,UISearchResultsUpdating{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let myurl = "https://pokedex-67742.firebaseio.com/pokedex.json"
+        JSONUtil.getDataFromURL(urlStr: myurl)
 //        self.tableView.tableHeaderView = UILabel(frame: CGRect(x: 0, y: 0, width: 1, height: 20))
+        
+        self.resultSearchController.loadViewIfNeeded()
         
         self.resultSearchController = ({
             let controller = UISearchController(searchResultsController: nil)
@@ -73,18 +77,29 @@ class DynaTableViewController: UITableViewController ,UISearchResultsUpdating{
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell01", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell03", for: indexPath) as! MyTableViewCell
+        
+        
+        
          if(self.resultSearchController.isActive && self.resultSearchController.searchBar.text != ""){
-           cell.textLabel?.text="\(filterData[indexPath.row])"
+//           cell.textLabel?.text="\(filterData[indexPath.row])"
+              cell.mySubtitle?.text = "\(filterData[indexPath.row])"
+        
          }else{
-            cell.textLabel?.text="\(data[indexPath.row])"
+//            cell.textLabel?.text="\(data[indexPath.row])"
+            cell.mySubtitle.text="\(data[indexPath.row])"
           }
         
-         cell.detailTextLabel?.text="Detail \(indexPath.row)"
+//         cell.detailTextLabel?.text="Detail \(indexPath.row)"
         if(indexPath.row%2 == 0){
-         cell.imageView?.image = UIImage(named: "001")
+//         cell.imageView?.image = UIImage(named: "001")
+            cell.myImage?.image = UIImage(named: "001")
+
+//         cell.contentView.backgroundColor = UIColor.blue
+            
         }else{
-          cell.imageView?.image = UIImage(named: "025")  
+//          cell.imageView?.image = UIImage(named: "025")
+            cell.myImage?.image = UIImage(named: "025")
         }
         return cell
     }
@@ -125,14 +140,25 @@ class DynaTableViewController: UITableViewController ,UISearchResultsUpdating{
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dataDetail" {
+            let idx = self.tableView.indexPathForSelectedRow!.row
+            let vc = segue.destination as! DetailViewController
+            vc.name = data[idx]
+            if(idx % 2 == 0){
+            vc.imgView = UIImage(named: "001")
+            }else{
+                 vc.imgView = UIImage(named: "025")
+            }
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+   
 
 }
