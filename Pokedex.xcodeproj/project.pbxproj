@@ -12,6 +12,11 @@
 		8686347C1DDD905A00800F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8686347A1DDD905A00800F8A /* Main.storyboard */; };
 		8686347E1DDD905A00800F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8686347D1DDD905A00800F8A /* Assets.xcassets */; };
 		868634811DDD905A00800F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8686347F1DDD905A00800F8A /* LaunchScreen.storyboard */; };
+		868634891DDD92BA00800F8A /* PokemonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868634881DDD92BA00800F8A /* PokemonTableViewController.swift */; };
+		8686348B1DDD92E900800F8A /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686348A1DDD92E900800F8A /* PokemonTableViewCell.swift */; };
+		8686348D1DDD931A00800F8A /* PokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686348C1DDD931A00800F8A /* PokeDetailViewController.swift */; };
+		868634901DDD98E900800F8A /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686348F1DDD98E900800F8A /* JSONUtil.swift */; };
+		868634921DDD991C00800F8A /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868634911DDD991C00800F8A /* ImageUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		8686347D1DDD905A00800F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868634801DDD905A00800F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868634821DDD905A00800F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868634881DDD92BA00800F8A /* PokemonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonTableViewController.swift; sourceTree = "<group>"; };
+		8686348A1DDD92E900800F8A /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		8686348C1DDD931A00800F8A /* PokeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeDetailViewController.swift; sourceTree = "<group>"; };
+		8686348F1DDD98E900800F8A /* JSONUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
+		868634911DDD991C00800F8A /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		868634751DDD905A00800F8A /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				8686348E1DDD98C700800F8A /* util */,
 				868634761DDD905A00800F8A /* AppDelegate.swift */,
 				868634781DDD905A00800F8A /* ViewController.swift */,
 				8686347A1DDD905A00800F8A /* Main.storyboard */,
 				8686347D1DDD905A00800F8A /* Assets.xcassets */,
 				8686347F1DDD905A00800F8A /* LaunchScreen.storyboard */,
 				868634821DDD905A00800F8A /* Info.plist */,
+				868634881DDD92BA00800F8A /* PokemonTableViewController.swift */,
+				8686348A1DDD92E900800F8A /* PokemonTableViewCell.swift */,
+				8686348C1DDD931A00800F8A /* PokeDetailViewController.swift */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		8686348E1DDD98C700800F8A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				8686348F1DDD98E900800F8A /* JSONUtil.swift */,
+				868634911DDD991C00800F8A /* ImageUtil.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868634891DDD92BA00800F8A /* PokemonTableViewController.swift in Sources */,
+				868634921DDD991C00800F8A /* ImageUtil.swift in Sources */,
+				8686348D1DDD931A00800F8A /* PokeDetailViewController.swift in Sources */,
+				8686348B1DDD92E900800F8A /* PokemonTableViewCell.swift in Sources */,
+				868634901DDD98E900800F8A /* JSONUtil.swift in Sources */,
 				868634791DDD905A00800F8A /* ViewController.swift in Sources */,
 				868634771DDD905A00800F8A /* AppDelegate.swift in Sources */,
 			);
