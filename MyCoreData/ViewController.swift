@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func btnReadSQLite(_ sender: Any) {
     }
     @IBAction func btnSaveSQLite(_ sender: Any) {
-        do{
+        do{ 
              let filemgr = FileManager.default
             let dirPaths = filemgr.urls(for: .documentDirectory,                                       in: .userDomainMask)
             
