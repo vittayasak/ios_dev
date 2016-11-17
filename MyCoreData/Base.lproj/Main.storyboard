@@ -37,6 +37,22 @@
                                     <action selector="btnReadCoreData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50C-lc-1dt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-Y1-Xnm">
+                                <rect key="frame" x="130" y="229" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save SQLite"/>
+                                <connections>
+                                    <action selector="btnSaveSQLite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tkj-DS-VK3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udw-Lk-HAQ">
+                                <rect key="frame" x="129" y="280" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read SQLite"/>
+                                <connections>
+                                    <action selector="btnReadSQLite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Flf-Nf-RJB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
